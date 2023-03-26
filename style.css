@@ -1,24 +1,26 @@
 body{
     background-color: rgb(234, 236, 237);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-main{
+.container{
     display: flex; 
-    align-items: center; 
-    width: 80%; 
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 2%;
     margin-top: 3%; 
-    margin-left: 10%;
 }
-img{
+.pic-sherlock{
     width: 35%; 
-    margin-left: 10%;
 }
-div{
+.content{
     width: 40%; 
     text-align: center; 
-    margin-left: 3%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h1{
+.title{
     color: rgb(54, 63, 74); 
     font-size: 80px; 
     margin: 0;  
@@ -31,8 +33,29 @@ h1{
     color: rgb(124, 125, 132);
     margin-bottom: 10%;
 }
-a{
+.link{
     color: rgb(249, 255, 255); 
-    border: 1px solid rgb(104, 111, 136); background-color: rgb(104, 111, 136); text-decoration: none; 
-    padding: 15px; 
+    border: 1px solid rgb(104, 111, 136); 
+    background-color: rgb(104, 111, 136); 
+    text-decoration: none; 
+    padding: 15px;
+    font-weight: 500; 
+}
+@media (max-width: 1115px){
+    .container{
+        width: 100%;
+        gap: 1%;
+        margin-top: 4%; 
+    } 
+}
+@media (max-width: 1000px){
+    .container{
+        margin-top: 6%; 
+    } 
+}
+@media (max-width: 900px){
+    .container{
+        display: flex; 
+        flex-direction: column;
+    } 
 }
